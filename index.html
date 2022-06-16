@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Slide banner</title>
+</head>
+<body>
+    <header>
+        <img src="public/avion-banner.jpg" class="banner">
+        <a href="#" class="logo">Viagiarre.</a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">home</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2> Sticky header</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia, pariatur neque, ducimus totam fugiat corporis culpa ad facilis quos voluptate nemo quidem recusandae in eos magni reiciendis atque repudiandae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia, pariatur neque, ducimus totam fugiat corporis culpa ad facilis quos voluptate nemo quidem recusandae in eos magni reiciendis atque repudiandae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia, pariatur neque, ducimus totam fugiat corporis culpa ad facilis quos voluptate nemo quidem recusandae in eos magni reiciendis atque repudiandae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia, pariatur neque, ducimus totam fugiat corporis culpa ad facilis quos voluptate nemo quidem recusandae in eos magni reiciendis atque repudiandae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia, pariatur neque, ducimus totam fugiat corporis culpa ad facilis quos voluptate nemo quidem recusandae in eos magni reiciendis atque repudiandae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia, pariatur neque, ducimus totam fugiat corporis culpa ad facilis quos voluptate nemo quidem recusandae in eos magni reiciendis atque repudiandae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia, pariatur neque, ducimus totam fugiat corporis culpa ad facilis quos voluptate nemo quidem recusandae in eos magni reiciendis atque repudiandae? </p>
+
+        </section>
+    <script>
+        window.addEventListener("scroll", function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky' , window.scrollY > 0 );
+        });
+
+        const navigation = document.querySelector('nav');
+
+        document.querySelector('.toggle').onclick = function(){this.classList.toggle('active');
+        navigation.classList.toggle('active'); }
+        
+    </script>
+</body>
+</html>
